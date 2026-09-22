@@ -1,0 +1,17 @@
+// Ejercicio 8 - Contar números negativos
+// Leer 8 enteros y contar cuántos son menores que cero.
+// Entrada: -3 5 0 8 -1 4 -6 2
+// Salida:  Negativos = 3
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[8], count = 0;
+    for (int i = 0; i < 8; i++) {
+        cin >> v[i];
+        if (v[i] < 0) count++;
+    }
+    cout << "Negativos = " << count << endl;
+    return 0;
+}
