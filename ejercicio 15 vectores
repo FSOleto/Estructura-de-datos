@@ -1,0 +1,17 @@
+// Ejercicio 15 - Sumar posiciones impares
+// Leer 8 enteros y sumar los elementos en índices impares (1, 3, 5, 7).
+// Entrada: 3 5 7 9 11 13 15 17
+// Salida:  Suma índices impares = 44
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[8], suma = 0;
+    for (int i = 0; i < 8; i++)
+        cin >> v[i];
+    for (int i = 1; i < 8; i += 2)
+        suma += v[i];
+    cout << "Suma indices impares = " << suma << endl;
+    return 0;
+}
