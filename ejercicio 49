@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, a[100]; double suma = 0; cin >> n; for (int i = 0; i < n; ++i) { cin >> a[i]; suma += a[i]; } double prom = suma / n; for (int i = 0; i < n; ++i) if (a[i] > prom) cout << a[i] << ' '; cout << '\n';
+    return 0;
+}
