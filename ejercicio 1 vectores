@@ -1,0 +1,17 @@
+// Ejercicio 1 - Leer y mostrar un vector
+// Leer 5 números enteros en un arreglo y mostrarlos en el mismo orden.
+// Entrada: 3 8 1 6 4
+// Salida:  3 8 1 6 4
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[5];
+    for (int i = 0; i < 5; i++)
+        cin >> v[i];
+    for (int i = 0; i < 5; i++)
+        cout << v[i] << " ";
+    cout << endl;
+    return 0;
+}
