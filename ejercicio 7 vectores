@@ -1,0 +1,17 @@
+// Ejercicio 7 - Contar números positivos
+// Leer 8 enteros y contar cuántos son mayores que cero.
+// Entrada: -3 5 0 8 -1 4 -6 2
+// Salida:  Positivos = 4
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[8], count = 0;
+    for (int i = 0; i < 8; i++) {
+        cin >> v[i];
+        if (v[i] > 0) count++;
+    }
+    cout << "Positivos = " << count << endl;
+    return 0;
+}
