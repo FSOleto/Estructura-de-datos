@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, a[100], m = 0; cin >> n; for (int i = 0; i < n; ++i) cin >> a[i]; for (int i = 0; i < n; ++i) { bool existe = false; for (int j = 0; j < m; ++j) if (a[j] == a[i]) existe = true; if (!existe) a[m++] = a[i]; }
+    for (int i = 0; i < m; ++i) cout << a[i] << (i + 1 == m ? '\n' : ' ');
+    return 0;
+}
