@@ -1,0 +1,17 @@
+// Ejercicio 9 - Contar pares
+// Leer 10 enteros y contar cuántos son pares.
+// Entrada: 1 2 3 4 5 6 7 8 9 10
+// Salida:  Pares = 5
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[10], count = 0;
+    for (int i = 0; i < 10; i++) {
+        cin >> v[i];
+        if (v[i] % 2 == 0) count++;
+    }
+    cout << "Pares = " << count << endl;
+    return 0;
+}
