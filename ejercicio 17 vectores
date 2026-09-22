@@ -1,0 +1,19 @@
+// Ejercicio 17 - Buscar un valor
+// Leer 8 enteros y un número X. Indicar si X aparece en el arreglo.
+// Entrada: 4 9 2 7 5 1 8 3  X=7
+// Salida:  Encontrado
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[8], x;
+    for (int i = 0; i < 8; i++)
+        cin >> v[i];
+    cin >> x;
+    bool encontrado = false;
+    for (int i = 0; i < 8; i++)
+        if (v[i] == x) { encontrado = true; break; }
+    cout << (encontrado ? "Encontrado" : "No encontrado") << endl;
+    return 0;
+}
