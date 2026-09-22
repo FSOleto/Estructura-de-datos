@@ -1,0 +1,18 @@
+// Ejercicio 5 - Encontrar el mayor
+// Leer 7 enteros y determinar el valor mayor.
+// Entrada: 5 12 3 27 9 18 4
+// Salida:  Mayor = 27
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[7];
+    for (int i = 0; i < 7; i++)
+        cin >> v[i];
+    int mayor = v[0];
+    for (int i = 1; i < 7; i++)
+        if (v[i] > mayor) mayor = v[i];
+    cout << "Mayor = " << mayor << endl;
+    return 0;
+}
