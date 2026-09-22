@@ -1,0 +1,18 @@
+// Ejercicio 6 - Encontrar el menor
+// Leer 7 enteros y determinar el valor menor.
+// Entrada: 5 -2 13 0 -9 8 4
+// Salida:  Menor = -9
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[7];
+    for (int i = 0; i < 7; i++)
+        cin >> v[i];
+    int menor = v[0];
+    for (int i = 1; i < 7; i++)
+        if (v[i] < menor) menor = v[i];
+    cout << "Menor = " << menor << endl;
+    return 0;
+}
