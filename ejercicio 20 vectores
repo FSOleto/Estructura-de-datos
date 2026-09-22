@@ -1,0 +1,20 @@
+// Ejercicio 20 - Copiar un vector
+// Leer 6 enteros, copiarlos a un segundo arreglo y mostrar la copia.
+// Entrada: 11 22 33 44 55 66
+// Salida:  Copia: 11 22 33 44 55 66
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[6], copia[6];
+    for (int i = 0; i < 6; i++) {
+        cin >> v[i];
+        copia[i] = v[i];
+    }
+    cout << "Copia: ";
+    for (int i = 0; i < 6; i++)
+        cout << copia[i] << " ";
+    cout << endl;
+    return 0;
+}
