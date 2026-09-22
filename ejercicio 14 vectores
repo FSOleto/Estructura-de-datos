@@ -1,0 +1,17 @@
+// Ejercicio 14 - Sumar posiciones pares
+// Leer 8 enteros y sumar los elementos en índices pares (0, 2, 4, 6).
+// Entrada: 3 5 7 9 11 13 15 17
+// Salida:  Suma índices pares = 36
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[8], suma = 0;
+    for (int i = 0; i < 8; i++)
+        cin >> v[i];
+    for (int i = 0; i < 8; i += 2)
+        suma += v[i];
+    cout << "Suma indices pares = " << suma << endl;
+    return 0;
+}
