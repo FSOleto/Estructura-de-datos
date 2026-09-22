@@ -1,0 +1,19 @@
+// Ejercicio 12 - Elevar al cuadrado
+// Leer 5 enteros y crear un segundo arreglo con el cuadrado de cada valor.
+// Entrada: 2 3 4 5 6
+// Salida:  4 9 16 25 36
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[5], cuad[5];
+    for (int i = 0; i < 5; i++) {
+        cin >> v[i];
+        cuad[i] = v[i] * v[i];
+    }
+    for (int i = 0; i < 5; i++)
+        cout << cuad[i] << " ";
+    cout << endl;
+    return 0;
+}
