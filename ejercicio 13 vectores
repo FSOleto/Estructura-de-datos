@@ -1,0 +1,19 @@
+// Ejercicio 13 - Reemplazar negativos por cero
+// Leer 7 enteros y sustituir todo valor negativo por 0.
+// Entrada: -4 5 -1 9 0 -8 3
+// Salida:  0 5 0 9 0 0 3
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[7];
+    for (int i = 0; i < 7; i++) {
+        cin >> v[i];
+        if (v[i] < 0) v[i] = 0;
+    }
+    for (int i = 0; i < 7; i++)
+        cout << v[i] << " ";
+    cout << endl;
+    return 0;
+}
