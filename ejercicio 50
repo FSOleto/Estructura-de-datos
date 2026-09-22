@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, a[100]; double suma = 0; cin >> n;
+for (int i = 0; i < n; ++i) { cin >> a[i];
+suma += a[i]; } 
+double prom = suma / n;
+int mejor = a[0];
+double d = a[0] > prom ? a[0] - prom : prom - a[0]; for (int i = 1; i < n; ++i)
+{ double x = a[i] > prom ? a[i] - prom : prom - a[i]; if (x < d) { d = x; mejor = a[i]; } } cout << mejor << '\n';
+    return 0;
+}
