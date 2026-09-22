@@ -1,0 +1,17 @@
+    // Ejercicio 3 - Sumar todos los elementos
+// Leer 5 enteros y calcular la suma total.
+// Entrada: 4 7 2 9 3
+// Salida:  Suma = 25
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int v[5], suma = 0;
+    for (int i = 0; i < 5; i++) {
+        cin >> v[i];
+        suma += v[i];
+    }
+    cout << "Suma = " << suma << endl;
+    return 0;
+}
